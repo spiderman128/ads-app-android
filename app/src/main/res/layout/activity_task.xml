@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/mainLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context=".MainActivity"
+	android:background="@drawable/bg_screen">
+
+	<com.startapp.sdk.ads.banner.Banner
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"/>
+
+	<com.startapp.sdk.ads.banner.Banner
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"/>
+
+	<ProgressBar
+		android:id="@+id/loader"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:indeterminateTint="#FFFFFF"/>
+
+	<LinearLayout
+		android:id="@+id/taskContainer"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:gravity="center_horizontal"
+		android:layout_marginTop="100dp"
+		android:layout_marginBottom="100dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginLeft="16dp"
+		android:visibility="gone"
+		android:background="@drawable/bg_task_container">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:id="@+id/impressionCountText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0"
+				android:textColor="#000000"
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+			<TextView
+				android:id="@+id/impressionTargetText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="/20"
+				android:textColor="#000000"
+				android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/factText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30dp"
+			android:gravity="center_horizontal"
+			android:textColor="#000000"
+			android:text="Hello World!"
+			android:layout_marginBottom="50dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+		<androidx.cardview.widget.CardView
+			app:cardElevation="5dp"
+			android:layout_marginTop="30dp"
+			app:cardPreventCornerOverlap="false"
+			app:cardCornerRadius="15dp"
+			android:layout_margin="5dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:id="@+id/taskButton"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="Next"
+				android:textColor="#FFFFFF"
+				style="@style/Widget.AppCompat.Button.Borderless"/>
+
+		</androidx.cardview.widget.CardView>
+
+
+
+
+	</LinearLayout>
+
+</RelativeLayout>
+

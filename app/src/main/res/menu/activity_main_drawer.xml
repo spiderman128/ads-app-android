@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_wallet"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_wallet"
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_history"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_history"
+            android:title="Payment History" />
+        <item
+            android:id="@+id/nav_channel"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_channel"
+            android:title="Join Telegram" />
+        <item
+            android:id="@+id/nav_group"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_group"
+            android:title="Join For Support" />
+        <item
+            android:id="@+id/nav_dev"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_dev"
+            android:title="Privacy Policy" />
+    </group>
+</menu>
